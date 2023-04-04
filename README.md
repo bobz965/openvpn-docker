@@ -13,6 +13,7 @@ To rebuild:
 
 	git clone https://github.com/jfelten/openvpn-docker.git
 	cd openvpn-docker
-	docker build .
+	# docker build .
+        docker build --network=host -t openvpn:0.0.1 .
 	
 ```
