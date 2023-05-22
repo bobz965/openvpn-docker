@@ -1,5 +1,6 @@
 # Smallest base image
-FROM alpine:3.17.3
+#https://hub.docker.com/_/alpine/tags
+FROM alpine:latest
 
 ADD VERSION .
 

@@ -17,3 +17,7 @@ To rebuild:
         docker build --network=host -t openvpn:0.0.1 .
 	
 ```
+
+setup ==> /etc/openvpn/setup
+
+
