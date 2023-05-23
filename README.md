@@ -14,8 +14,9 @@ To rebuild:
 	git clone https://github.com/jfelten/openvpn-docker.git
 	cd openvpn-docker
 	# docker build .
-        docker build --network=host -t openvpn:0.0.1 .
-	
+        docker build --network=host -t openvpn:v0.0.1 .
+        docker tag openvpn:v0.0.1 registry.cn-hangzhou.aliyuncs.com/bobz/openvpn:v1.0.1
+        docker push registry.cn-hangzhou.aliyuncs.com/bobz/openvpn:v0.0.1
 ```
 
 setup ==> /etc/openvpn/setup
