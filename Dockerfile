@@ -16,5 +16,6 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/reposi
 RUN mkdir -p /dev/net && \
      mknod /dev/net/tun c 10 200 
 
-COPY setup /etc/openvpn/
+COPY setup /etc/openvpn/setup/
+RUN mkdir -p /etc/openvpn/certs && chmod +x /etc/openvpn/setup/*.sh
 

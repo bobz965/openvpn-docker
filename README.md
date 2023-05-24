@@ -19,7 +19,3 @@ To rebuild:
         docker tag openvpn:$release registry.cn-hangzhou.aliyuncs.com/bobz/openvpn:$release
         docker push registry.cn-hangzhou.aliyuncs.com/bobz/openvpn:$release
 ```
-
-setup ==> /etc/openvpn/setup
-
-
