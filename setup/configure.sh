@@ -52,12 +52,13 @@ sed 's|OVPN_NETWORK|'"${OVPN_NETWORK}"'|' -i /etc/openvpn/openvpn.conf
 sed 's|OVPN_SUBNET_MASK|'"${OVPN_SUBNET_MASK}"'|' -i /etc/openvpn/openvpn.conf
 sed 's|CIPHER|'"${CIPHER}"'|' -i /etc/openvpn/openvpn.conf
 
-sed 's|NETWORK|'"${NETWORK}"'|' -i /etc/openvpn/openvpn.conf
-sed 's|NETMASK|'"${NETMASK}"'|' -i /etc/openvpn/openvpn.conf
 sed 's|OVPN_K8S_POD_NETWORK|'"${OVPN_K8S_POD_NETWORK}"'|' -i /etc/openvpn/openvpn.conf
 sed 's|OVPN_K8S_POD_SUBNET_MASK|'"${OVPN_K8S_POD_SUBNET_MASK}"'|' -i /etc/openvpn/openvpn.conf
 sed 's|OVPN_K8S_SVC_NETWORK|'"${OVPN_K8S_SVC_NETWORK}"'|' -i /etc/openvpn/openvpn.conf
 sed 's|OVPN_K8S_SVC_SUBNET_MASK|'"${OVPN_K8S_SVC_SUBNET_MASK}"'|' -i /etc/openvpn/openvpn.conf
+
+sed 's|NETWORK|'"${NETWORK}"'|' -i /etc/openvpn/openvpn.conf
+sed 's|NETMASK|'"${NETMASK}"'|' -i /etc/openvpn/openvpn.conf
 
 sed 's|OVPN_K8S_SEARCH|'"${FORMATTED_SEARCH}"'|' -i /etc/openvpn/openvpn.conf
 sed 's|OVPN_K8S_DNS|'"${DNS}"'|' -i /etc/openvpn/openvpn.conf
